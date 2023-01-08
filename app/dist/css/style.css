@@ -34,7 +34,7 @@ body .app_container {
 body .app_container .main_container {
   width: calc(100% - 440px);
   height: 100%;
-  background: url("/app/res/img/background.jpg");
+  background: url("app/res/img/background.jpg");
   overflow-y: hidden;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ body .app_container .main_container .current_task .alarm_frame {
 body .app_container .main_container .current_task .alarm_frame .clock_face {
   width: calc(100% - 12px);
   height: calc(100% - 12px);
-  background: url("/app/res/svg/clock_frame.svg") #000;
+  background: url("app/res/svg/clock_frame.svg") #000;
   background-size: cover;
   background-repeat: no-repeat;
   border: 6px solid #000;
