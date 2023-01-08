@@ -47,7 +47,7 @@ button:active {
   }
   body .app_container .main_container {
     width: calc(100% - 340px);
-    background: url("/app/res/img/background.jpg");
+    background: url("app/res/img/background.jpg");
     background-size: 100%;
   }
   body .app_container .tasks_container {
@@ -72,7 +72,7 @@ button:active {
   body .app_container .main_container {
     width: calc(100% - 0px);
     height: calc(100% - 50px);
-    background: url("/app/res/img/background.jpg");
+    background: url("app/res/img/background.jpg");
     background-size: 100%;
     overflow-y: unset;
     border-radius: unset;
