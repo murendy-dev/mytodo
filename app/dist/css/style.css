@@ -142,12 +142,15 @@ body .app_container .main_container .current_task .time_elapse {
           backdrop-filter: blur(6px);
 }
 body .app_container .main_container .current_task .time_elapse .current_activity {
-  width: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: flex;
   place-items: center;
   gap: 5px;
   position: relative;
   padding-bottom: 15px;
+  margin: 0 auto;
   margin-bottom: 10px;
 }
 body .app_container .main_container .current_task .time_elapse .current_activity::before {
