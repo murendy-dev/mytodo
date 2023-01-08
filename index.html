@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="app/dist/css/style.css">
+   <link rel="stylesheet" href="app/dist/css/responsive.css">
+   <link rel="stylesheet" href="app/libs/fonts/remixicon.css">
+   <title>Todoist</title>
+</head>
+<body>
+<div class="app_container">
+   <div class="main_container">
+      <div class="current_task">
+         <div class="alarm_frame">
+            <div class="clock_face">
+               <div class="clock_stick main_stick"></div>
+               <div class="clock_stick mid_stick"></div>
+               <div class="clock_stick low_stick"></div>
+            </div>
+         </div>
+
+         <div class="time_elapse">
+            <div class="current_activity">
+               <span>Active task:</span>
+               <p>Read My Books</p>
+            </div>
+            <span>Task ending in:</span>
+            <h1 class="counter"><h1>
+         </div>
+
+
+         <div class="upcoming_activity">
+            <div class="indicator">
+               <span class="flash"></span>
+            </div>
+            <p>Upcoming task: <span>No available tasks</span></p>
+         </div>
+      </div>
+   </div>
+
+   <div class="tasks_container">
+      <div class="header">
+         <button class="new_task"><i class="ri ri-add-line"></i> Task</button>
+         <button class="slide_up"><i class="ri ri-arrow-drop-up-line"></i></button>
+      </div>
+      <ul class="tasks_list">
+         <!-- <li class="task_wrapper">
+            <div class="list_num">1</div>
+            <div class="group_items">
+               <p>Start A Morning Prayer @ 12:15</p> 
+               <button class="float_btn delete_item"><i class="ri ri-delete-bin-2-line"></i></button>
+               <div class="created_date"><span>09 Nov 2022, 10:48</span></div>
+            </div>
+         </li>
+         <li class="task_wrapper">
+            <div class="list_num">1</div>
+            <div class="group_items">
+               <p>Go to the library @ 10:47</p>
+               <div class="created_date"><span>09 Nov 2022, 10:48</span></div>
+            </div>
+         </li> -->
+      </ul>
+   
+      
+      <div class="bg_cover">
+         <div class="permit_container" data-id="">
+            <div class="content">
+               <p>Are you sure, you want to delete?</p>
+               <button class="cancel_btn btn">Cancel</button>
+               <button class="confirm_btn btn" >Yes</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+
+
+   <div class="popup_container">
+      <div class="newtask_container">
+         <h1>New Task</h1>
+         <br>
+         <div class="group_items">
+            <input type="text" class="task_title" placeholder="Title your task">
+            <input type="date" class="time_input set_date">
+            <input type="time" class="time_input set_time">
+         </div>
+
+         <button class="save_task">Create Task</button>
+      </div>
+   </div>
+</div>
+
+
+
+
+
+<script src="app/libs/jquery/jquery-3.6.0.min.js"></script>
+<script src="app/dist/js/events.js"></script>
+<script src="app/dist/js/timer.js"></script>
+<script src="app/dist/js/tasks.js"></script>
+</body>
+</html>
