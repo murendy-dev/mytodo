@@ -23,6 +23,7 @@ body {
   background: #bec7ee;
   display: grid;
   place-items: center;
+  overflow: hidden;
 }
 body .app_container {
   width: 80%;
@@ -142,15 +143,12 @@ body .app_container .main_container .current_task .time_elapse {
           backdrop-filter: blur(6px);
 }
 body .app_container .main_container .current_task .time_elapse .current_activity {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
   display: flex;
   place-items: center;
   gap: 5px;
   position: relative;
   padding-bottom: 15px;
-  margin: 0 auto;
   margin-bottom: 10px;
 }
 body .app_container .main_container .current_task .time_elapse .current_activity::before {
@@ -239,6 +237,9 @@ body .app_container .tasks_container {
 }
 body .app_container .tasks_container .header {
   width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: flex;
   justify-content: space-between;
   place-items: center;
@@ -401,6 +402,7 @@ body .app_container .tasks_container .bg_cover.active {
 }
 body .app_container .popup_container {
   width: 400px;
+  max-width: 80%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;

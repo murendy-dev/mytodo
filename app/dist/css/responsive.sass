@@ -45,14 +45,13 @@ button:active
       width: 100%
       height: 100vh
       background: #bec7ee
-      background: #000
       .app_container
          width: 90%
          height: 90%
          display: flex
          .main_container
             width: calc( 100% - 340px )
-            background: url('/app/res/img/background.jpg')
+            background: url('../res/img/background.jpg')
             background-size: 100%
          .tasks_container
             width: 300px
@@ -66,19 +65,20 @@ button:active
       width: 100%
       height: 100vh
       background: #bec7ee
-      background: #f00
-      overflow: hidden
       .app_container
          width: 100%
          height: 100%
          display: flex
          flex-direction: column
          border-radius: unset
+         position: relative
+         overflow: hidden
          .main_container
             width: calc( 100% - 0px )
-            height: calc( 100% - 50px  )
-            background: url('/app/res/img/background.jpg')
-            background-size: 100%
+            height: calc( 100% - 60px )
+            padding-bottom: 60px
+            background: url('../res/img/background.jpg')
+            background-size: 120%
             overflow-y: unset
             border-radius: unset
             &::before
@@ -88,13 +88,37 @@ button:active
                   // margin-top: 30px
          .tasks_container
             width: calc( 100% - 40px )
-            height: 40px
-            position: absolute
+            height: 400px
+            overflow-y: hidden
+            position: fixed
             left: 0
-            bottom: 0
+            bottom: -370px
             border-radius: 15px 15px 0 0
+            transition: .3s
             .header
                button.slide_up
                   display: flex
+            ul.tasks_list
+               height: 300px
+               overflow-y: auto
          .tasks_container.active
             bottom: 0
+         .popup_container
+            width: 80%
+            max-width: 400px
+
+@media screen and ( max-width: 468px )
+   body
+      .app_container
+         .main_container
+         .popup_container
+            width: 80%
+            max-width: 80%
+            padding: 20px
+            .group_items
+               width: 100%
+               flex-direction: column
+               display: block
+            input.time_input
+               width: calc( 100% - 40px )
+               min-width: calc( 100% - 40px )

@@ -30,6 +30,7 @@ body
    background: #bec7ee
    display: grid
    place-items: center
+   overflow: hidden
    .app_container
       width: 80%
       height: 90%
@@ -131,13 +132,12 @@ body
                border-radius: 15px
                backdrop-filter: blur(6px)
                .current_activity
-                  width: max-content
+                  width: 100%
                   display: flex
                   place-items: center
                   gap: 5px
                   position: relative
                   padding-bottom: 15px
-                  margin: 0 auto
                   margin-bottom: 10px
                   &::before
                      content: ''
@@ -212,6 +212,7 @@ body
          overflow-y: hidden
          .header
             width: 100%
+            height: max-content
             display: flex
             justify-content: space-between
             place-items: center
@@ -347,6 +348,7 @@ body
             top: 0
       .popup_container
          width: 400px
+         max-width: 80%
          height: max-content
          background: $dark
          box-shadow: 0 1px 8px #000

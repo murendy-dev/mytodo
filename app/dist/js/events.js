@@ -1,7 +1,8 @@
 $(function() {
 
    $('button.slide_up').click(function() {
-      $('.task_container').toggleClass('active');
+      const taskContainer = $(this).parent().parent();
+      taskContainer.toggleClass('active');
    });
 
 
